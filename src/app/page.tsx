@@ -42,9 +42,9 @@ export default function Home() {
             />
             <p className="text-center mt-7 text-xl">Fine Dry Cleaning</p>
             <p className="text-center font-thin py-6 px-8 hidden md:block">
-              Tirpok Cleaners offers the finest dry cleaning services you’ll
-              find. Our attention to detail and complete expertise ensure can
-              trust us with your entire wardrobe.
+              Tirpok Cleaners offers the finest dry cleaning services
+              you&apos;ll find. Our attention to detail and complete expertise
+              ensure can trust us with your entire wardrobe.
             </p>
           </div>
           <div className="md:w-1/3">
