@@ -5,6 +5,15 @@ const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
+export const metadata = {
+  title: "Tirpok Cleaners",
+  description: "More than just a cleaners!",
+  openGraph: {
+    title: "Tirpok Cleaners",
+    description: "More than just a cleaners!",
+  },
+};
+
 export default function Home() {
   return (
     <main className="">
