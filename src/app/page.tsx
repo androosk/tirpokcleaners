@@ -74,9 +74,9 @@ export default function Home() {
               Blankets, Bedspreads and More
             </p>
             <p className="text-center font-thin py-6 px-8 hidden md:block">
-              Let us take care of your larger items and downs. They'll come back
-              to you clean, fluffy and fresh every time without the hassle of
-              overloading your washer or spending the day at the laundromat
+              Let us take care of your larger items and downs. They&apos;ll come
+              back to you clean, fluffy and fresh every time without the hassle
+              of overloading your washer or spending the day at the laundromat
             </p>
           </div>
           <div className="md:w-1/3">
