@@ -22,7 +22,9 @@ export default function Home() {
             <p className="text-xl text-black">Five minutes to pick up</p>
           </div>
           <div>
-            <img
+            <Image
+              height={800}
+              width={800}
               className="rounded-full"
               src={"/images/autri-taheri-xoVylccwsN8-unsplash.jpg"}
               alt="girl reclining in laundry basket"
@@ -31,7 +33,9 @@ export default function Home() {
         </div>
         <section className="container w-10/12 mx-auto py-12 bg-primary md:flex md:flex-wrap justify-center">
           <div className="md:w-1/3">
-            <img
+            <Image
+              height={300}
+              width={300}
               className="w-3/4 rounded-full mx-auto"
               src={"/images/scarves-4128126_640.jpg"}
               alt="images of ties and cufflinks"
@@ -44,7 +48,9 @@ export default function Home() {
             </p>
           </div>
           <div className="md:w-1/3">
-            <img
+            <Image
+              height={300}
+              width={300}
               className="w-3/4 rounded-full mx-auto"
               src={"/images/shirts-591750_640.jpg"}
               alt="images of ties and cufflinks"
@@ -57,7 +63,9 @@ export default function Home() {
             </p>
           </div>
           <div className="md:w-1/3">
-            <img
+            <Image
+              height={300}
+              width={300}
               className="w-3/4 rounded-full mx-auto"
               src={"/images/jordan-bigelow-53BjYSxca5g-unsplash.jpg"}
               alt="images of ties and cufflinks"
@@ -72,7 +80,9 @@ export default function Home() {
             </p>
           </div>
           <div className="md:w-1/3">
-            <img
+            <Image
+              height={300}
+              width={300}
               className="w-3/4 rounded-full mx-auto"
               src={"/images/pina-messina-qQKv7r1BaRw-unsplash.jpg"}
               alt="images of ties and cufflinks"
