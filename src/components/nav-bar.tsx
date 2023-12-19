@@ -76,8 +76,9 @@ const NavBar = () => {
           >
             <li>
               <Link
-                href="/"
+                href="/about"
                 className={isHamburger ? hamburgerItem : notHamburgerItem}
+                onClick={handleClick}
               >
                 About Us
               </Link>
@@ -86,6 +87,7 @@ const NavBar = () => {
               <Link
                 href="/"
                 className={isHamburger ? hamburgerItem : notHamburgerItem}
+                onClick={handleClick}
               >
                 Locations
               </Link>
@@ -94,22 +96,25 @@ const NavBar = () => {
               <Link
                 href="/"
                 className={isHamburger ? hamburgerItem : notHamburgerItem}
+                onClick={handleClick}
               >
                 Services
               </Link>
             </li>
             <li>
               <Link
-                href="/"
+                href="/contact"
                 className={isHamburger ? hamburgerItem : notHamburgerItem}
+                onClick={handleClick}
               >
                 Coupons
               </Link>
             </li>
             <li>
               <Link
-                href="/"
+                href="/contact"
                 className={isHamburger ? hamburgerItem : notHamburgerItem}
+                onClick={handleClick}
               >
                 Contact Us
               </Link>

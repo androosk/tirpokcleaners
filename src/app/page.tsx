@@ -21,14 +21,16 @@ export default function Home() {
         className={`${montserrat.className} container w-10/12 mx-auto my-11 mt-28 rounded-lg p-4 bg-[#faf9f8]`}
       >
         <div className="md:grid md:grid-cols-2 gap-4 items-center justify-center">
-          <div className="px-10">
+          <div className="px-4 md:px-10">
             <p className="font-thin mb-7 tracking-wider text-black">
               DO YOUR LAUNDRY IN TEN MINUTES
             </p>
             <p className="text-5xl text-[#1d6076]">Freedom from</p>
             <p className="text-5xl text-[#1d6076]">Laundry Day.</p>
             <p className="mt-7 text-xl text-black">Five minutes to drop off,</p>
-            <p className="text-xl text-black">Five minutes to pick up</p>
+            <p className="text-xl text-black mb-7 md:mb-0">
+              Five minutes to pick up
+            </p>
           </div>
           <div>
             <Image
@@ -39,17 +41,22 @@ export default function Home() {
               alt="girl reclining in laundry basket"
             />
           </div>
+          <p className="text-center md:mt-7 mb-7 md:mb-0 text-xl md:hidden">
+            Wash, Dry and Fold Laundry
+          </p>
         </div>
-        <section className="container w-10/12 mx-auto py-12 bg-primary md:flex md:flex-wrap justify-center">
+        <section className="container md:w-10/12 mx-auto py-12 bg-primary md:flex md:flex-wrap justify-center">
           <div className="md:w-1/3">
             <Image
               height={300}
               width={300}
-              className="w-3/4 rounded-full mx-auto"
+              className="md:w-3/4 rounded-full mx-auto"
               src={"/images/scarves-4128126_640.jpg"}
               alt="images of ties and cufflinks"
             />
-            <p className="text-center mt-7 text-xl">Fine Dry Cleaning</p>
+            <p className="text-center md:mt-7 mb-7 md:mb-0 text-xl">
+              Fine Dry Cleaning
+            </p>
             <p className="text-center font-thin py-6 px-8 hidden md:block">
               Tirpok Cleaners offers the finest dry cleaning services
               you&apos;ll find. Our attention to detail and complete expertise
@@ -60,11 +67,13 @@ export default function Home() {
             <Image
               height={300}
               width={300}
-              className="w-3/4 rounded-full mx-auto"
+              className="md:w-3/4 rounded-full mx-auto"
               src={"/images/shirts-591750_640.jpg"}
               alt="images of ties and cufflinks"
             />
-            <p className="text-center mt-7 text-xl">Platinum Shirt Laundry</p>
+            <p className="text-center md:mt-7 mb-7 md:mb-0 text-xl">
+              Platinum Shirt Laundry
+            </p>
             <p className="text-center font-thin py-6 px-8 hidden md:block">
               We guarantee that your buttons will be replaced if cracked or
               broken, whites will be white, colors bright and all removable
@@ -75,11 +84,11 @@ export default function Home() {
             <Image
               height={300}
               width={300}
-              className="w-3/4 rounded-full mx-auto"
+              className="md:w-3/4 rounded-full mx-auto"
               src={"/images/jordan-bigelow-53BjYSxca5g-unsplash.jpg"}
               alt="images of ties and cufflinks"
             />
-            <p className="text-center mt-7 text-xl">
+            <p className="text-center md:mt-7 mb-7 md:mb-0 text-xl">
               Blankets, Bedspreads and More
             </p>
             <p className="text-center font-thin py-6 px-8 hidden md:block">
@@ -92,11 +101,11 @@ export default function Home() {
             <Image
               height={300}
               width={300}
-              className="w-3/4 rounded-full mx-auto"
+              className="md:w-3/4 rounded-full mx-auto"
               src={"/images/pina-messina-qQKv7r1BaRw-unsplash.jpg"}
               alt="images of ties and cufflinks"
             />
-            <p className="text-center mt-7 text-xl">
+            <p className="text-center md:mt-7 mb-7 md:mb-0 text-xl">
               Sew what? We sew anything!
             </p>
             <p className="text-center font-thin py-6 px-8 hidden md:block">
@@ -107,7 +116,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <video
+      {/* <video
         autoPlay
         loop
         muted
@@ -124,7 +133,7 @@ export default function Home() {
         }}
       >
         <source src="/images/clothes.mp4" type="video/mp4" />
-      </video>
+      </video> */}
     </main>
   );
 }
