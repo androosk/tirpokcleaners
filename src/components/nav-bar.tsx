@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
   const [navBar, setNavbar] = useState(false);
   const [isHamburger, setIsHamburger] = useState(false);
 
@@ -24,7 +24,9 @@ const NavBar = () => {
   };
 
   const handleClick = () => {
-    setIsHamburger(!isHamburger);
+    if (window.screen.width < 600) {
+      setIsHamburger(!isHamburger);
+    }
   };
 
   const initial =
@@ -85,7 +87,7 @@ const NavBar = () => {
             </li>
             <li>
               <Link
-                href="/"
+                href="/locations"
                 className={isHamburger ? hamburgerItem : notHamburgerItem}
                 onClick={handleClick}
               >
@@ -94,7 +96,7 @@ const NavBar = () => {
             </li>
             <li>
               <Link
-                href="/"
+                href="/services"
                 className={isHamburger ? hamburgerItem : notHamburgerItem}
                 onClick={handleClick}
               >
@@ -103,7 +105,7 @@ const NavBar = () => {
             </li>
             <li>
               <Link
-                href="/contact"
+                href="/coupons"
                 className={isHamburger ? hamburgerItem : notHamburgerItem}
                 onClick={handleClick}
               >

@@ -21,17 +21,16 @@ export default function Page() {
   return (
     <div>
       <div className="px-4">
-        <section className="w-full py-10 md:py-16 mt-28 flex flex-col justify-center">
+        <section className="w-full py-10 md:py-16 mt-20 flex flex-col justify-center">
           <h1 className="text-center mb-8 text-4xl xl:text-5xl tracking-wide">
             Contact us
           </h1>
           <p
-            className={`${montserrat.className} uppercase text-xl text-center font-extralight w-full mx-auto mb-8`}
+            className={`${montserrat.className} uppercase text-xl text-center font-extralight w-full mx-auto`}
           >
             we&apos;ll get back to you as soon as we can
           </p>
           {/* <ObfuscatedEmail /> */}
-          <div className="border-b-4 border-orange-500 w-full md:max-w-xl mt-8 mx-auto"></div>
         </section>
         <ContactPage />
       </div>

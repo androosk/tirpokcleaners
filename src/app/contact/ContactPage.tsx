@@ -64,11 +64,11 @@ const ContactPage: React.FC = () => {
     }
   };
 
-  const inputClass = `${montserrat.className} w-full py-2 px-4 border bg-zinc-700 border-orange-600 rounded`;
+  const inputClass = `${montserrat.className} w-full py-2 px-4 border bg-zinc-200 border-[#1d6076] rounded`;
 
   return (
     <div
-      className={`${montserrat.className} text-[#1d6076] py-20 container w-10/12 mb-28 mx-auto rounded-lg p-4 bg-[#faf9f8]`}
+      className={`${montserrat.className} text-[#1d6076] bounce-up py-20 container md:w-10/12 mb-28 mx-auto rounded-lg bg-[#faf9f8]`}
     >
       <div className="w-full md:max-w-xl mx-auto">
         {formState === "submitted" ? (
@@ -78,13 +78,13 @@ const ContactPage: React.FC = () => {
             </h2>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-4 pb-12">
+          <form onSubmit={handleSubmit} className="space-y-4">
             <div className="flex items-center gap-4">
               <label
                 className="text-lg md:text-xl tracking-wider w-44"
                 htmlFor="name"
               >
-                Full name:
+                Your name:
               </label>
               <input
                 className={inputClass}
@@ -157,7 +157,7 @@ const ContactPage: React.FC = () => {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="px-4 py-2 border-orange-600 border-solid border-2 bg-zinc-700 text-gray-50 rounded text-xl"
+                  className="px-4 py-2 border-[#1d6076] border-solid border-2 bg-zinc-700 text-gray-50 rounded text-xl"
                 >
                   Submit
                 </button>

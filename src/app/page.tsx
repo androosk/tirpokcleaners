@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className="">
       <div
-        className={`${montserrat.className} container w-10/12 mx-auto my-11 mt-28 rounded-lg p-4 bg-[#faf9f8]`}
+        className={`${montserrat.className} bounce-up container w-10/12 mx-auto my-11 mt-28 rounded-lg p-4 bg-[#faf9f8]`}
       >
         <div className="md:grid md:grid-cols-2 gap-4 items-center justify-center">
           <div className="px-4 md:px-10">
