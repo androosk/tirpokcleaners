@@ -69,7 +69,7 @@ export default function Page() {
   return (
     <div className="flex-grow">
       <section
-        className={`bounce-up container w-10/12 mx-auto my-11 mt-28 rounded-lg p-4 bg-[#faf9f8]`}
+        className={`container w-10/12 mx-auto my-11 mt-28 rounded-lg p-4 bg-[#faf9f8]`}
       >
         <h1 className="text-2xl">Our Services</h1>
         <div className="py-5">

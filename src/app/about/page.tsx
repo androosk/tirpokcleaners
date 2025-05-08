@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <div className="flex-grow">
       <section
-        className={`bounce-up container w-10/12 mx-auto my-11 mt-28 rounded-lg py-20 bg-[#faf9f8]`}
+        className={`container w-10/12 mx-auto my-11 mt-28 rounded-lg py-20 bg-[#faf9f8]`}
       >
         <h1 className="text-center mb-8 text-3xl xl:text-5xl tracking-wide">
           About Tirpok Cleaners

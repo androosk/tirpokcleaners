@@ -68,7 +68,7 @@ const ContactPage: React.FC = () => {
 
   return (
     <div
-      className={`${montserrat.className} text-[#1d6076] bounce-up py-20 container md:w-10/12 mb-28 mx-auto rounded-lg bg-[#faf9f8]`}
+      className={`${montserrat.className} text-[#1d6076] py-20 container md:w-10/12 mb-28 mx-auto rounded-lg bg-[#faf9f8]`}
     >
       <div className="w-full md:max-w-xl mx-auto">
         {formState === "submitted" ? (
