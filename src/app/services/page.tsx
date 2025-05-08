@@ -83,9 +83,9 @@ export default function Page() {
           ></hr>
         </div>
         {/* Service section */}
-        {services.map(service => {
+        {services.map((service, i) => {
           return (
-            <section className="px-2 py-2">
+            <section className="px-2 py-2" key={i}>
               <h2 className="text-2xl text-blue-700 leading-10">
                 {service.title}
               </h2>
