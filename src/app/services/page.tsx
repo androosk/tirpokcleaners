@@ -26,7 +26,7 @@ const services = [
   {
     title: "Express Pickup and Dropoff Service",
     description:
-      "As a Tirpok Cleaners Express Service customer, you’ll get two Express Service bags that you can fill up and drop off at your convenience — no waiting on lines. Our locations even have 24 hour drop off boxes for total convenience",
+      "As a Tirpok Cleaners Express Service customer, you’ll get two Express Service bags that you can fill up and drop off at your convenience — no waiting on lines. Our locations offer 24 hour drop off boxes for total convenience",
   },
   {
     title: "Sew What? Sew Anything!",
@@ -36,7 +36,7 @@ const services = [
   {
     title: "Area Rug Cleaning",
     description:
-      "Whether it’s a Berber, Broadloom, or Silk Oriental our rug experts can handle it.",
+      "Let us refresh and renew your small area rugs. We can clean any type of rug up to 3’x5’, from the most delicate to the most durable.",
   },
   {
     title: "Wash Dry & Fold Laundry",
@@ -51,12 +51,12 @@ const services = [
   {
     title: "Leather Suede & Fur Cleaning",
     description:
-      "As professionals, we only trust professionals. To care for your leather suede and furs. Let us extend this professional service to you.",
+      "Keep your leather, suede and fur garments looking their best. Our experts will clean and condition your garments to keep them looking new.",
   },
   {
     title: "Drapery Cleaning",
     description:
-      "When the day’s light shows your draperies and curtains beginning to look less than fresh and crisp, it’s time to call our drapery experts. Regular cleaning extends the life of draperies and keeps your entire room fresh and clean. You can trust us for any type of fabric window covering, from heavy velvet to the lightest sheers. We clean window coverings in your home or office so you never have bare windows. We map and measure each piece.  With our on-site service, we can clean any type of drapery, valance, shade or blind right in your home or office.",
+      "When the day’s light shows your draperies and curtains beginning to look less than fresh and crisp, you can trust our drapery experts. Regular cleaning extends the life of draperies and keeps your entire room fresh and clean. You can trust us for any type of fabric window covering, from heavy velvet to the lightest sheers.",
   },
   {
     title: "Ugg Boot Cleaning",
