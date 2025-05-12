@@ -41,7 +41,7 @@ const services = [
   {
     title: "Wash Dry & Fold Laundry",
     description:
-      "Do your laundry in four minutes; two minutes to drop it off and two minutes to pick it up!",
+      "Do your laundry in ten minutes; five minutes to drop it off and five minutes to pick it up!",
   },
   {
     title: "Wedding Gown Cleaning & Preservation",
