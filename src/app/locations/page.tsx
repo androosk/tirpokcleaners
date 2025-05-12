@@ -69,10 +69,19 @@ export default function Page() {
 
                 <div className="mt-4">
                   <p className="font-medium text-gray-800 mb-2">
-                    Hours have changed due to Covid-19
+                    7:00 AM - 7:00 PM Mon-Fri
                   </p>
-                  <p className="text-gray-700">
-                    Please call the store for current hours.
+                  <p className="font-medium text-gray-800 mb-2">
+                    9:00 AM - 5:00 PM Sat
+                  </p>
+                  <p className="font-medium text-gray-800 mb-2">
+                    Closed Sunday
+                  </p>
+                  <p className="font-medium text-gray-800">
+                    * Summer Saturday Hours 9:00 am - 3:00 pm
+                  </p>
+                  <p className="font-medium text-gray-800">
+                    In effect July 4th to Labor Day
                   </p>
                 </div>
               </div>
@@ -124,10 +133,19 @@ export default function Page() {
 
                 <div className="mt-4">
                   <p className="font-medium text-gray-800 mb-2">
-                    Hours have changed due to Covid-19
+                    8:00 AM - 7:00 PM Mon-Fri
                   </p>
-                  <p className="text-gray-700">
-                    Please call the store for current hours.
+                  <p className="font-medium text-gray-800 mb-2">
+                    9:00 AM - 5:00 PM Sat
+                  </p>
+                  <p className="font-medium text-gray-800 mb-2">
+                    Closed Sunday
+                  </p>
+                  <p className="font-medium text-gray-800">
+                    * Summer Saturday Hours 9:00 am - 3:00 pm
+                  </p>
+                  <p className="font-medium text-gray-800">
+                    In effect July 4th to Labor Day
                   </p>
                 </div>
               </div>

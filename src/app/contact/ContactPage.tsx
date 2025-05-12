@@ -1,5 +1,4 @@
 "use client";
-
 import { Turnstile } from "@marsidev/react-turnstile";
 import { Montserrat } from "next/font/google";
 import { useState } from "react";
@@ -84,7 +83,7 @@ const ContactPage: React.FC = () => {
                 className="text-lg md:text-xl tracking-wider w-44"
                 htmlFor="name"
               >
-                Your name:
+                Your name<span className="text-red-600">*</span>:
               </label>
               <input
                 className={inputClass}
@@ -101,7 +100,7 @@ const ContactPage: React.FC = () => {
                 className="text-lg md:text-xl tracking-wider w-44"
                 htmlFor="emailAddress"
               >
-                Email address:
+                Email address<span className="text-red-600">*</span>:
               </label>
               <input
                 className={inputClass}
@@ -125,7 +124,6 @@ const ContactPage: React.FC = () => {
                 id="mobileNumber"
                 name="mobileNumber"
                 onChange={handleChange}
-                required
                 type="text"
                 value={formData.mobileNumber}
               />
@@ -135,7 +133,7 @@ const ContactPage: React.FC = () => {
                 className="text-lg md:text-xl tracking-wider w-44"
                 htmlFor="message"
               >
-                Message:
+                Message<span className="text-red-600">*</span>:
               </label>
               <textarea
                 className={inputClass}
@@ -146,6 +144,7 @@ const ContactPage: React.FC = () => {
                 value={formData.message}
               ></textarea>
             </div>
+            <p className="text-sm text-red-600">* Required fields</p>
             {error && <p className="text-red-500 text-right">{error}</p>}
             <div className="grid sm:flex gap-8 justify-center sm:justify-between flex-wrap items-start py-8">
               <div className="bg-black">
