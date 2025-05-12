@@ -35,11 +35,9 @@ export default function Page() {
 
               <div className="text-base font-bold my-2">NO LIMIT</div>
 
+              <p className="text-xs text-gray-700">Not valid on Thursday</p>
               <p className="text-xs text-gray-700">
-                Coupon valid Wednesday & Thursday only.
-              </p>
-              <p className="text-xs text-gray-700">
-                Cannot be combined with other shirt offers.
+                Cannot be combined with other shirt offers
               </p>
 
               <div className="flex items-center justify-center mt-4 border-t border-gray-200 pt-4">
@@ -86,11 +84,9 @@ export default function Page() {
 
               <div className="text-base font-bold my-2">NO LIMIT</div>
 
+              <p className="text-xs text-gray-700">Not valid on Thursday</p>
               <p className="text-xs text-gray-700">
-                Coupon valid Wednesday & Thursday only.
-              </p>
-              <p className="text-xs text-gray-700">
-                Cannot be combined with other shirt offers.
+                Cannot be combined with other dry cleaning offers
               </p>
 
               <div className="flex items-center justify-center mt-4 border-t border-gray-200 pt-4">
@@ -128,7 +124,7 @@ export default function Page() {
               <div>
                 <div className="my-3">
                   <span className="text-5xl font-bold text-red-600">
-                    10% Off
+                    15% Off
                   </span>
                 </div>
 
