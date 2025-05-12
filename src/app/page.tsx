@@ -20,13 +20,17 @@ export default function Home() {
       <div
         className={`${montserrat.className} container w-10/12 mx-auto my-11 mt-28 rounded-lg p-4 bg-[#faf9f8]`}
       >
+        <h1 className="text-4xl pb-5 md:text-5xl text-[#1d6076] text-center flex flex-col md:flex-row justify-center">
+          Welcome to&nbsp;
+          <span className="">Tirpok Cleaners!</span>
+        </h1>
         <div className="md:grid md:grid-cols-2 gap-4 items-center justify-center">
           <div className="px-4 md:px-10">
-            <p className="font-thin mb-7 tracking-wider text-black">
-              DO YOUR LAUNDRY IN TEN MINUTES
-            </p>
             <p className="text-5xl text-[#1d6076]">Freedom from</p>
             <p className="text-5xl text-[#1d6076]">Laundry Day.</p>
+            <p className="font-thin my-7 tracking-wider text-black">
+              DO YOUR LAUNDRY IN TEN MINUTES
+            </p>
             <p className="mt-7 text-xl text-black">Five minutes to drop off,</p>
             <p className="text-xl text-black mb-7 md:mb-0">
               Five minutes to pick up
