@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://tirpokcleaners.vercel.app/" target="_blank">
+  <a href="https://www.tirpok.com/" target="_blank">
     <img alt="Tirpok Cleaners Logo" src="https://github.com/androosk/dry-cleaning-website/blob/main/src/assets/tirpok-logo.png" width="150" />
   </a>
 </p>
