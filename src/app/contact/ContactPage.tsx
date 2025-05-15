@@ -126,6 +126,7 @@ const ContactPage: React.FC = () => {
                 onChange={handleChange}
                 type="text"
                 value={formData.mobileNumber}
+                required={false}
               />
             </div>
             <div className="flex items-center gap-4">
