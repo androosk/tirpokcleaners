@@ -12,7 +12,7 @@ export const ObfuscatedEmail = ({
 }) => {
   return (
     <Email
-      email="libertyjasmine@yahoo.com"
+      email="liberty@tirpok.com"
       className={
         className || "text-center tracking-wider text-2xl md:text-3xl underline"
       }
