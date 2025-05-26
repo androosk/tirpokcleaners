@@ -99,7 +99,7 @@ export default function CommercialLaundry() {
                 Spas & Salons
               </p>
               <p className="text-center font-thin py-6 px-6">
-                Luxurious, fluffy towels and linens that match your spa's
+                Luxurious, fluffy towels and linens that match your spa&apos;s
                 premium experience. We handle robes, towels, sheets, and
                 specialty items with expert care.
               </p>
@@ -160,9 +160,9 @@ export default function CommercialLaundry() {
               </div>
               <h3 className="text-xl text-[#1d6076] mb-4">Schedule Pickup</h3>
               <p className="text-black px-4">
-                We'll arrange regular pickup times that work with your business
-                hours. Morning, afternoon, or evening - whatever fits your
-                schedule.
+                We&apos;ll arrange regular pickup times that work with your
+                business hours. Morning, afternoon, or evening - whatever fits
+                your schedule.
               </p>
             </div>
 
@@ -248,8 +248,8 @@ export default function CommercialLaundry() {
                 Inventory Management
               </h3>
               <p className="text-black ml-11">
-                We help you maintain the right amount of inventory so you're
-                never short on clean linens during busy periods.
+                We help you maintain the right amount of inventory so
+                you&apos;re never short on clean linens during busy periods.
               </p>
             </div>
           </div>
