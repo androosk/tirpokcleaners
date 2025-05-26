@@ -173,7 +173,6 @@
 // export default ContactPage;
 "use client";
 import { useState } from "react";
-import { Turnstile } from "@marsidev/react-turnstile";
 import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -187,8 +186,9 @@ const ContactPage: React.FC = () => {
     emailAddress: "",
     mobileNumber: "",
     message: "",
+    website: "",
+    company: "",
   });
-  const [token, setToken] = useState("");
   const [error, setError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -204,14 +204,13 @@ const ContactPage: React.FC = () => {
     setIsSubmitting(true);
     setError("");
 
-    if (!token) {
-      setError("Please complete the captcha");
+    if (formData.website || formData.company) {
+      setError("Spam detected. Please try again.");
       setIsSubmitting(false);
       return;
     }
 
     try {
-      // Web3Forms submission
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
@@ -219,14 +218,15 @@ const ContactPage: React.FC = () => {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY, // Your Web3Forms access key stored in env variable
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
           subject: "New Contact Form Submission - Tirpok Cleaners",
           from_name: "Tirpok Cleaners Contact Form",
           name: formData.name,
           email: formData.emailAddress,
           mobile: formData.mobileNumber || "Not provided",
           message: formData.message,
-          "cf-turnstile-response": token,
+          // website: formData.website,
+          // company: formData.company,
         }),
       });
 
@@ -239,6 +239,8 @@ const ContactPage: React.FC = () => {
           emailAddress: "",
           mobileNumber: "",
           message: "",
+          website: "",
+          company: "",
         });
       } else {
         console.error("Form submission error:", data);
@@ -267,6 +269,33 @@ const ContactPage: React.FC = () => {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
+            {/* Honeypot fields - hidden from users but visible to bots */}
+            <div className="hidden">
+              <label htmlFor="website">Website (leave blank)</label>
+              <input
+                id="website"
+                name="website"
+                type="text"
+                value={formData.website}
+                onChange={handleChange}
+                tabIndex={-1}
+                autoComplete="off"
+              />
+            </div>
+            <div style={{ display: "none" }}>
+              <label htmlFor="company">Company (leave blank)</label>
+              <input
+                id="company"
+                name="company"
+                type="text"
+                value={formData.company}
+                onChange={handleChange}
+                tabIndex={-1}
+                autoComplete="off"
+              />
+            </div>
+
+            {/* Regular form fields */}
             <div className="flex items-center gap-4">
               <label
                 className="text-lg md:text-xl tracking-wider w-44"
@@ -335,26 +364,18 @@ const ContactPage: React.FC = () => {
                 rows={5}
               ></textarea>
             </div>
-            <p className="text-sm text-red-600">* Required fields</p>
+            <p className="text-sm text-red-600 text-end">* Required fields</p>
             {error && <p className="text-red-500 text-right">{error}</p>}
-            <div className="grid sm:flex gap-8 justify-center sm:justify-between flex-wrap items-start py-8">
-              <div className="bg-black">
-                <Turnstile
-                  siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || ""}
-                  onSuccess={setToken}
-                />
-              </div>
-              <div className="text-center">
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className={`px-4 py-2 border-[#1d6076] border-solid border-2 bg-zinc-700 text-gray-50 rounded text-xl ${
-                    isSubmitting ? "opacity-70 cursor-not-allowed" : ""
-                  }`}
-                >
-                  {isSubmitting ? "Submitting..." : "Submit"}
-                </button>
-              </div>
+            <div className="text-center py-8">
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className={`px-4 py-2 border-[#1d6076] border-solid border-2 bg-zinc-700 text-gray-50 rounded text-xl ${
+                  isSubmitting ? "opacity-70 cursor-not-allowed" : ""
+                }`}
+              >
+                {isSubmitting ? "Submitting..." : "Submit"}
+              </button>
             </div>
           </form>
         )}
