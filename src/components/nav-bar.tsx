@@ -78,6 +78,15 @@ const NavBar: React.FC = () => {
           >
             <li>
               <Link
+                href="/professional-services"
+                className={isHamburger ? hamburgerItem : notHamburgerItem}
+                onClick={handleClick}
+              >
+                Professional Services
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/about"
                 className={isHamburger ? hamburgerItem : notHamburgerItem}
                 onClick={handleClick}
