@@ -8,11 +8,12 @@
 </h1>
 
 ## Frameworks
-  - ReactJS
+  - NextJS 14
   - Tailwind CSS
+  - AI chat bot integration for customer service and garment care questions
   - Images and videos courtesy of Pixabay and Unsplash
 
-Website for Tirpok Cleaners in Hunterdon County New Jersey
+Website for Tirpok Cleaners in Hunterdon and Warren Counties in New Jersey
 Click above logo to go to the deployed version
 
 Have a great day!
