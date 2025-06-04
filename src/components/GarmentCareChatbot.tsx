@@ -15,7 +15,7 @@ export default function GarmentCareChatbot() {
     {
       id: "1",
       content:
-        "Hi! I'm your garment care assistant. I can help you with stain removal, fabric care, dry cleaning questions, and general clothing maintenance tips. What would you like to know?",
+        "Hi! I'm your dry cleaning assistant. I can help you with:\n\n• Stain removal and fabric care tips\n• Store hours and locations\n• Pricing and services\n• General garment care questions\n\nWhat would you like to know?",
       role: "assistant",
       timestamp: new Date(),
     },

@@ -1,4 +1,3 @@
-// app/api/chat/route.ts
 import { NextRequest, NextResponse } from "next/server";
 
 const CLAUDE_API_URL = "https://api.anthropic.com/v1/messages";
