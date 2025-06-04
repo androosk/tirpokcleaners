@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Montserrat } from "next/font/google";
+import GarmentCareChatbot from "@/components/GarmentCareChatbot";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -119,6 +120,7 @@ export default function Home() {
             </p>
           </div>
         </section>
+        <GarmentCareChatbot />
       </div>
       {/* <video
         autoPlay
